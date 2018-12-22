@@ -1,0 +1,21 @@
+html
+
+  head
+    style
+      include css/style.css
+      include css/button.css
+    title= title
+
+  body
+    a(href = "/") Retour
+    form(method='POST' action='/Monkey')
+      div.form-group
+        label(for='Nom') Nom:
+          input#Nom.form-control(type='text', name='name')
+        label(for='Age') Age:
+          input#Nom.form-control(type='text', name='age')
+        label(for='Race') Race:
+          input#Nom.form-control(type='text', name='race')
+        label(for='Enclos') Enclos:
+          input#Nom.form-control(type='number', name='Enclos')
+      button.btn.btn-primary(type='submit') Au goulag

@@ -1,0 +1,25 @@
+html
+	head
+		style
+			include css/style.css
+			include css/button.css
+		title= title
+
+		body
+
+		h1= message
+			a(href = "/") Retour
+			- var name = ""
+			- var age = ""
+			- var race = ""
+			- var enclos = ""
+			ul
+			for Monkey in Monkeys
+				- name = Monkey.Monkeyname
+				- age = Monkey.Monkeyage
+				- race = Monkey.Monkeyrace
+				- enclos = Monkey.Idenclos
+				p Nom : #{name}
+				p -Age : #{age}
+				p -Race : #{race}
+				p -Enclos N°#{enclos}

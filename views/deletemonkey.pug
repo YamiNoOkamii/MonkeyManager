@@ -1,0 +1,13 @@
+head
+  title= title
+  style
+    include style.css
+    include button.css
+body
+  a(href = "/") Retour
+  h3 Bon on abat qui ?
+  form(method='delete' action='/deletemonkey')
+    div.form-group
+      label(for='Nom') Nom:
+        input#Nom.form-control(type='text', name='name')
+      button.btn.btn-primary(type='submit') Valider
